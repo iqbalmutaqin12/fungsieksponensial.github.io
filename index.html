@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi Eksponensial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/index.html" class="logo">mathCrash</a>
+            <a href="/about.html" class="about">About</a>
+        </div>
+        <div class="display-calculator">
+            <div class="graph">
+                <div id="myPlot" class="coord" style="width:100%;">
+                    <div class="guide-wrapper">
+                        <div class="guide">
+                            <h2>Petunjuk Penggunaan</h2>
+                            <p>1.Masukkan angka yang ingin anda hitung</p>
+                            <p>2.Gunakan format angka yang benar, contoh <i>2ˣ+1ˣ</i> maka ditulis pada inputannya menjadi <i>2^x+1^x</i></p>
+                            <p>3.Perhatikan pula bahwa penulisannya harus sesuai dengan format seperti penggunaan tanda spasi</p>
+                            <p>4.Click tombol calculate untuk memunculkan hasil</p>
+                            <p>5.Jika tombol calculate tidak muncul pada perangkat anda maka gunakan tombol enter pada keyboard pc atau keyboard hp
+                            anda</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="calculator-input">    
+                <input type="text" placeholder="y = " class="input-converted" disabled>
+                
+                <div class="user-input">
+                    <input type="text" placeholder="Masukan pangkat" class="input-number">
+                </div>  
+                <button class="calculate">calculate</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</html>

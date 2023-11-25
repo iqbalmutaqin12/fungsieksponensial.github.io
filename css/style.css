@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 100vh;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+/* container */
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/* navbar */
+.container .navbar {
+    position: relative;
+    height: 9%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.navbar .logo {
+    color: rgb(10, 7, 7);
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    left: 50px;
+    transition: .1s ease-in;
+}
+
+.navbar .logo:hover {
+    font-weight: 600;
+    color: rgb(69, 62, 217);
+}
+
+.navbar .about {
+    color: rgb(10, 7, 7);
+    font-family: sans-serif;
+    text-decoration: none;
+    position: absolute;
+    right: 50px;
+    transition: .1s ease-in;
+}
+
+.navbar .about:hover {
+    font-weight: 600;
+    color: rgb(69, 62, 217);
+}
+
+/* display calculator */
+.container .display-calculator {
+    width: 100% ;
+    display: flex;
+    height: 90%;
+
+    /* align-items: center; */
+    /* flex-direction: row; */
+}
+
+/* display graphic */
+.display-calculator .graph {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+/* guide  */
+.guide-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.guide {
+    /* color: aqua; */
+    /* background-color: aqua; */
+    font-family: sans-serif;
+    margin: 0 30px;
+}
+
+.guide-wrapper .guide h2 {
+    font-size: 20px;
+}
+.guide-wrapper .guide p {
+    font-size: 17px;
+}
+
+/* hide guide */
+.hide {
+    display: none;
+}
+
+/* input the number */
+.display-calculator .calculator-input {
+    position: relative;
+    width: 50%;
+}
+
+.calculator-input .input-converted {
+    border: none;
+}
+
+/* positioning the input in the bottom of the page */
+.calculator-input .user-input {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.calculator-input input {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #cbcbcb;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-size: 23px;
+}   
+
+/* calculate the number */
+.calculator-input .calculate {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    padding: 10px;
+    }
+
+/* responsive */
+@media screen and (max-width: 810px) {
+    .container .display-calculator {
+        flex-direction: column;
+    }
+    
+    .display-calculator .graph {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .display-calculator .calculator-input {
+        width: 100%;
+    }
+    
+    .calculator-input .calculate {
+        position: absolute;
+        right: 15px;
+        bottom: 5px;
+        padding: 10px;
+        }
+    
+    .input-converted {
+        display: none;
+        }
+    .calculate {
+        display: none;
+    }
+
+    }
+
+@media screen and (max-width: 480px) {
+    .calculator-input .calculate {
+        position: absolute;
+        right: 15px;
+        bottom: 5px;
+        padding: 10px;
+    }
+    .graph .coord {
+        height: 500px;
+    }
+        
+    .guide-wrapper .guide h2 {
+        font-size: 17px;
+    }
+    
+    .guide-wrapper .guide p {
+        font-size: 15px;
+    }
+}
+ 
+

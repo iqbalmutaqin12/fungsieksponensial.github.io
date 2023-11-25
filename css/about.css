@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    }
+
+.container{
+    width: 100% ;
+    height: 100%;
+    text-align: center;
+    background: #ffffff;
+}
+
+
+.container .navbar {
+    position: relative;
+    height: 9%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.navbar .logo {
+    color: rgb(10, 7, 7);
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    left: 50px;
+    transition: .1s ease-in;
+}
+
+.navbar .logo:hover {
+    font-weight: 600;
+    color: rgb(69, 62, 217);
+}
+    
+
+.navbar .home {
+    color: rgb(10, 7, 7);
+    font-family: sans-serif;
+    text-decoration: none;
+    position: absolute;
+    right: 50px;
+    transition: .1s ease-in;
+}
+
+.navbar .home:hover {
+    font-weight: 600;
+    color: rgb(69, 62, 217);
+}
+
+
+.header{
+    padding-top: 30px;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.sub-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-profile {
+    border-radius: 50%;
+}
+
+.teams{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;box-sizing: border-box;
+}
+
+.teams:hover{
+    background: #ddd;
+    border-radius: 12px;
+}
+
+.teams img{
+    width: 200px;
+    height: 200px;
+}
+
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.desig {
+    font-style: italic;
+    color: #888;
+}
+
+.about {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+.social-links{
+    margin: 14px;
+}
+
+.social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+
+/* .social-links a:hover{
+    transform: scale(1.5);
+} */
+
+.social-links a i{
+    color: #444;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    .header h1 {
+        font-size: 25px;
+    }
+    .teams{
+        max-width: 100%;
+    }
+}
